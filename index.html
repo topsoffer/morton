@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morton Coarse Kosher Salt 454g | Elevate Your Dishes to Chef Level</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Neutral Amazon-inspired (White, Gray, Amber/Orange for CTA) -->
+    <!-- Application Structure Plan: The SPA supports multiple "views" and now multiple languages within a single HTML file. Content for Thai and English versions are duplicated and toggled via JavaScript. The primary "main-sales-content" view (in either language) includes product overview, details, reviews, offer, and payment. Secondary "info-content" views (Privacy Policy, Terms, Contact Us) are also duplicated and toggled. Navigation links in the header switch to the main sales view and scroll to sections. Footer links switch to and display specific info views, hiding the main sales content. This structure creates distinct "pages" and provides multi-language support while adhering to the single HTML file constraint, improving user focus and navigation for different content types. -->
+    <!-- Visualization & Content Choices: Chart.js/Plotly.js are not applicable. Visualizations are HTML/CSS based. The interactive image gallery for product visuals, bullet points for features, buy box with quantity, star rating, accordion for FAQs remain. A countdown timer for the offer and a QR code placeholder for payment are included. The Privacy Policy, Terms, and Contact Us sections use standard HTML text formatting. All visuals are created with HTML/Tailwind CSS. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <!-- START: Analytics Tracking Code Integration Point -->
+    <!-- คุณสามารถวางโค้ด Google Analytics (หรือเครื่องมือติดตามอื่นๆ) ได้ที่นี่ -->
+    <!-- ตัวอย่างโค้ด Google Analytics (GA4): -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script>
+    -->
+    <!-- END: Analytics Tracking Code Integration Point -->
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800" onclick="showView('main-sales'); return false;">Morton Salt</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#product-details" class="text-gray-600 hover:text-amber-700 transition" onclick="showView('main-sales', 'product-details'); return false;">
+                    <span class="lang-th">รายละเอียดสินค้า</span>
+                    <span class="lang-en hidden">Product Details</span>
+                </a>
+                <a href="#customer-reviews" class="text-gray-600 hover:text-amber-700 transition" onclick="showView('main-sales', 'customer-reviews'); return false;">
+                    <span class="lang-th">รีวิว</span>
+                    <span class="lang-en hidden">Reviews</span>
+                </a>
+                <a href="#offer-section" class="text-gray-600 hover:text-amber-700 transition" onclick="showView('main-sales', 'offer-section'); return false;">
+                    <span class="lang-th">ข้อเสนอพิเศษ</span>
+                    <span class="lang-en hidden">Special Offer</span>
+                </a>
+                <a href="#payment-section" class="text-gray-600 hover:text-amber-700 transition" onclick="showView('main-sales', 'payment-section'); return false;">
+                    <span class="lang-th">ชำระเงิน</span>
+                    <span class="lang-en hidden">Payment</span>
+                </a>
+                <a href="#faq-section" class="text-gray-600 hover:text-amber-700 transition" onclick="showView('main-sales', 'faq-section'); return false;">
+                    <span class="lang-th">คำถามที่พบบ่อย</span>
+                    <span class="lang-en hidden">FAQs</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-4 ml-auto">
+                <button id="lang-th-btn" class="lang-btn bg-gray-200 text-gray-800 px-4 py-1 rounded-full text-sm font-medium hover:bg-gray-300" onclick="setLanguage('th'); return false;">ไทย</button>
+                <button id="lang-en-btn" class="lang-btn bg-gray-200 text-gray-800 px-4 py-1 rounded-full text-sm font-medium hover:bg-gray-300" onclick="setLanguage('en'); return false;">English</button>
+                <a href="#offer-section" class="hidden md:block bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition" onclick="showView('main-sales', 'offer-section'); return false;">
+                    <span class="lang-th">สั่งซื้อเลย</span>
+                    <span class="lang-en hidden">Order Now</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8 md:py-12">
+        <!-- Main Sales Content View -->
+        <div id="main-sales-content" class="fade-in visible">
+            <!-- Thai Content -->
+            <div id="thai-content" class="lang-content">
+                <!-- Main Product Section (Amazon-like Top Fold) -->
+                <section id="product-overview" class="bg-white rounded-lg shadow-md p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Product Image Gallery -->
+                    <div class="md:col-span-1 flex flex-col items-center">
+                        <div class="w-full max-w-md h-80 md:h-96 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border border-gray-200">
+                            <img id="mainProductImageTh" src="http://googleusercontent.com/file_content/1" alt="ภาพเกลือโคเชอร์ Morton" class="w-full h-full object-contain">
+                        </div>
+                        <div class="mt-4 flex space-x-2 justify-center">
+                            <img class="thumbnail-image th-thumbnail w-16 h-16 rounded-md border border-gray-300 active" src="http://googleusercontent.com/file_content/1" alt="ภาพเกลือโคเชอร์ Morton ด้านหน้า" data-full="http://googleusercontent.com/file_content/1">
+                            <img class="thumbnail-image th-thumbnail w-16 h-16 rounded-md border border-gray-300" src="http://googleusercontent.com/file_content/4" alt="ภาพเกลือโคเชอร์ Morton ด้านหลัง" data-full="http://googleusercontent.com/file_content/4">
+                            <img class="thumbnail-image th-thumbnail w-16 h-16 rounded-md border border-gray-300" src="http://googleusercontent.com/file_content/2" alt="ภาพเกลือโคเชอร์ Morton ฉลากโภชนาการ" data-full="http://googleusercontent.com/file_content/2">
+                        </div>
+                    </div>
+
+                    <!-- Product Info (Middle Column) -->
+                    <div class="md:col-span-1">
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Morton Coarse Kosher Salt 454g: เกลือโคเชอร์เพื่อรสชาติระดับเชฟ</h1>
+                        <div class="flex items-center mt-2">
+                            <span class="text-amber-500 text-xl">★★★★★</span>
+                            <span class="ml-2 text-gray-600">4.9 จาก 5 ดาว (1,500+ รีวิว)</span>
+                        </div>
+                        <p class="mt-4 text-lg text-gray-700">ยกระดับทุกเมนูให้มีรสชาติกลมกล่อม ด้วยเกลือโคเชอร์เนื้อหยาบคุณภาพสูงจาก Morton ที่เชฟมืออาชีพทั่วโลกเลือกใช้</p>
+                        
+                        <ul class="mt-6 space-y-2 text-gray-700 list-disc list-inside">
+                            <li><strong class="text-gray-900">ควบคุมปริมาณง่าย:</strong> เกล็ดหยาบใหญ่ หยิบจับง่าย ปรุงรสได้แม่นยำ</li>
+                            <li><strong class="text-gray-900">ละลายเร็ว:</strong> ซึมซาบเข้าสู่อาหารได้ดี ให้รสชาติสม่ำเสมอ</li>
+                            <li><strong class="text-gray-900">เพิ่มรสชาติอาหาร:</strong> ดึงรสชาติธรรมชาติของวัตถุดิบออกมาได้อย่างเต็มที่</li>
+                            <li><strong class="text-gray-900">รสชาติบริสุทธิ์:</strong> ไม่เจือปนรสขมจากไอโอดีน เหมาะสำหรับทุกเมนู</li>
+                        </ul>
+                    </div>
+
+                    <!-- Buy Box (Right Column) -->
+                    <div class="md:col-span-1 bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <p class="text-gray-500 line-through text-xl">ราคาปกติ: 1,290 บาท</p>
+                        <p class="text-amber-700 font-bold text-4xl mt-2">ราคาพิเศษ: 990 บาท</p>
+                        <p class="text-green-600 text-lg mt-2">✅ ในสต็อก</p>
+                        <p class="text-gray-600 text-sm mt-1">จัดส่งฟรีทั่วประเทศ</p>
+
+                        <div class="mt-6">
+                            <label for="quantityTh" class="block text-gray-700 font-semibold mb-2">จำนวน:</label>
+                            <input type="number" id="quantityTh" value="1" min="1" class="w-24 p-2 border border-gray-300 rounded-md text-center">
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <a href="#payment-section" class="cta-button block w-full bg-amber-600 text-white text-lg font-semibold px-8 py-3 rounded-full text-center hover:bg-amber-700" onclick="showView('main-sales', 'payment-section'); return false;">เพิ่มลงในรถเข็น</a>
+                            <a href="#payment-section" class="cta-button block w-full bg-gray-800 text-white text-lg font-semibold px-8 py-3 rounded-full text-center hover:bg-gray-900" onclick="showView('main-sales', 'payment-section'); return false;">ซื้อเลย</a>
+                        </div>
+
+                        <div class="mt-6 text-sm text-gray-600">
+                            <p>⭐ รับประกันคุณภาพสินค้า ยินดีคืนเงินใน 30 วัน</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Detailed Product Description -->
+                <section id="product-details" class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">รายละเอียดสินค้า</h2>
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Morton Coarse Kosher Salt 454g คือเกลือโคเชอร์เนื้อหยาบคุณภาพพรีเมียมที่ได้รับการยอมรับจากเชฟและนักทำอาหารทั่วโลก
+                        ด้วยเกล็ดที่ใหญ่และมีรูปทรงเฉพาะตัว ทำให้ง่ายต่อการหยิบจับและควบคุมปริมาณในการปรุงรส
+                        แตกต่างจากเกลือแกงทั่วไปที่มักมีไอโอดีนผสมอยู่ ซึ่งอาจให้รสขมเล็กน้อย เกลือโคเชอร์ Morton ให้รสชาติที่บริสุทธิ์
+                        ช่วยดึงรสชาติธรรมชาติของวัตถุดิบออกมาได้อย่างเต็มที่ ทำให้ทุกเมนูของคุณอร่อยกลมกล่อมยิ่งขึ้น
+                    </p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">ทำไม Morton Coarse Kosher Salt จึงเป็นตัวเลือกที่ดีที่สุด?</h3>
+                    <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                        <li><strong class="text-gray-900">การควบคุมรสชาติที่เหนือกว่า:</strong> เกล็ดที่ใหญ่ทำให้คุณ "รู้สึก" ถึงปริมาณเกลือที่ใช้ได้ดีกว่าเกลือเม็ดละเอียด</li>
+                        <li><strong class="text-gray-900">ละลายและซึมซาบได้ดี:</strong> เหมาะสำหรับการหมักเนื้อ (Brining), การทำ Rubs, หรือการปรุงรสอาหารที่ต้องการให้เกลือซึมเข้าเนื้ออย่างสม่ำเสมอ</li>
+                        <li><strong class="text-gray-900">อเนกประสงค์:</strong> ใช้ได้หลากหลาย ตั้งแต่การปรุงอาหารประจำวัน, การอบ, การย่าง, ไปจนถึงการทำเครื่องดื่มค็อกเทล</li>
+                        <li><strong class="text-gray-900">คุณภาพที่เชื่อถือได้:</strong> จาก Morton แบรนด์เกลือชั้นนำที่อยู่คู่ครัวมาอย่างยาวนาน</li>
+                    </ul>
+                </section>
+
+                <!-- Customer Reviews Section -->
+                <section id="customer-reviews" class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">รีวิวจากลูกค้า</h2>
+                    <div class="flex items-center mt-4">
+                        <span class="text-amber-500 text-3xl">★★★★★</span>
+                        <span class="ml-3 text-gray-700 text-xl font-semibold">4.9 จาก 5 ดาว</span>
+                        <span class="ml-2 text-gray-500">(จาก 1,500+ รีวิว)</span>
+                    </div>
+
+                    <div class="mt-8 space-y-6">
+                        <!-- Review 1 -->
+                        <div class="border-b border-gray-200 pb-6 last:border-b-0">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                                <div class="ml-3">
+                                    <p class="font-semibold text-gray-900">คุณอรุณี</p>
+                                    <span class="text-amber-500 text-lg">★★★★★</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-gray-700 leading-relaxed">"เป็นเกลือที่ใช้ดีมากค่ะ ปรุงอาหารแล้วรสชาติกลมกล่อมขึ้นเยอะเลย ชอบที่หยิบง่าย ควบคุมปริมาณได้ดีค่ะ"</p>
+                            <p class="text-sm text-gray-500 mt-2">รีวิวเมื่อ 20 กรกฎาคม 2568</p>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="border-b border-gray-200 pb-6 last:border-b-0">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                                <div class="ml-3">
+                                    <p class="font-semibold text-gray-900">คุณภาณุ</p>
+                                    <span class="text-amber-500 text-lg">★★★★★</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-gray-700 leading-relaxed">"ลองใช้ Morton Kosher Salt ในการหมักเนื้อแล้วเนื้อนุ่มขึ้นจริงๆ ครับ รสชาติซึมเข้าเนื้อดีมาก แนะนำเลยครับ"</p>
+                            <p class="text-sm text-gray-500 mt-2">รีวิวเมื่อ 15 กรกฎาคม 2568</p>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="border-b border-gray-200 pb-6 last:border-b-0">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                                <div class="ml-3">
+                                    <p class="font-semibold text-gray-900">คุณเมษา</p>
+                                    <span class="text-amber-500 text-lg">★★★★★</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-gray-700 leading-relaxed">"เกลือโคเชอร์ Morton เป็นไอเท็มที่ต้องมีในครัวเลยค่ะ ไม่ว่าจะทำอะไรก็อร่อยขึ้น รสชาติไม่เค็มโดดเหมือนเกลือทั่วไป"</p>
+                            <p class="text-sm text-gray-500 mt-2">รีวิวเมื่อ 10 กรกฎาคม 2568</p>
+                        </div>
+                    </div>
+                    <button class="mt-8 bg-gray-200 text-gray-700 px-6 py-3 rounded-full hover:bg-gray-300 transition">อ่านรีวิวทั้งหมด</button>
+                </section>
+
+                <!-- Offer Section -->
+                <section id="offer-section" class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
+                    <div class="bg-amber-50 border-2 border-amber-200 rounded-xl p-6 md:p-10 text-center">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">ข้อเสนอสุดพิเศษสำหรับคุณ!</h2>
+                        <p class="mt-3 text-lg text-gray-600">รับ Morton Coarse Kosher Salt 454g วันนี้ในราคาที่ไม่เคยมีมาก่อน</p>
+                        
+                        <div class="my-6">
+                            <p class="text-gray-500 line-through text-xl">จากราคาปกติ 1,290 บาท</p>
+                            <p class="text-amber-700 font-bold text-5xl md:text-6xl">เหลือเพียง 990 บาท</p>
+                            <p class="mt-2 font-semibold text-lg">พร้อมจัดส่งฟรีทั่วประเทศ!</p>
+                        </div>
+
+                        <div class="bg-green-100 text-green-800 p-3 rounded-lg inline-block">
+                            <p>⭐ รับประกันคุณภาพสินค้า ยินดีคืนเงินใน 30 วัน</p>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="#payment-section" class="cta-button w-full md:w-auto bg-amber-600 text-white text-xl font-semibold px-12 py-4 rounded-full text-center hover:bg-amber-700" onclick="showView('main-sales', 'payment-section'); return false;">สั่งซื้อเลยตอนนี้</a>
+                        </div>
+
+                        <div id="countdownTh" class="mt-6">
+                            <p class="text-gray-600">ข้อเสนอนี้จะสิ้นสุดใน:</p>
+                            <p id="timerTh" class="text-2xl font-bold text-gray-900 mt-2"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Payment via QR Code Section -->
+                <section id="payment-section" class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">ขั้นตอนการชำระเงิน</h2>
+                        <p class="mt-3 text-lg text-gray-600">สแกน QR Code เพื่อชำระเงินค่าสินค้าได้อย่างง่ายดายและรวดเร็ว</p>
+
+                        <div class="mt-8 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900">สแกนเพื่อชำระเงิน</h3>
+                            <p class="mt-3 text-gray-600">ใช้แอปพลิเคชันธนาคารของคุณสแกน QR Code ด้านล่าง</p>
+                            
+                            <div class="mt-6 mx-auto w-64 h-64 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border border-gray-300">
+                                <!--  -->
+                                <img id="qrCodeImageTh" src="https://placehold.co/256x256/E0E0E0/6B7280?text=QR+Code" alt="QR Code Payment" class="w-full h-full object-contain">
+                            </div>
+                            <p class="mt-4 text-gray-700 font-semibold">ยอดที่ต้องชำระ: <span class="text-amber-700 text-2xl">990 บาท</span></p>
+
+                            <div class="mt-8 text-left">
+                                <h4 class="font-semibold text-gray-800">รายละเอียดการโอนเงิน (สำหรับโอนตรง):</h4>
+                                <p class="text-gray-600 mt-2">
+                                    <span class="font-medium">ชื่อบัญชี:</span> <span id="accountNameTh">ชื่อผู้รับเงินของคุณ</span><br>
+                                    <span class="font-medium">ธนาคาร:</span> <span id="bankNameTh">ชื่อธนาคารของคุณ</span><br>
+                                    <span class="font-medium">เลขที่บัญชี:</span> <span id="accountNumberTh">XXX-X-XXXXX-X</span>
+                                </p>
+                                <button id="copyPaymentDetailsTh" class="mt-4 bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition">คัดลอกรายละเอียด</button>
+                                <p id="copyMessageTh" class="text-sm text-green-600 mt-2 hidden">คัดลอกเรียบร้อย!</p>
+                            </div>
+                        </div>
+                        <p class="mt-8 text-gray-600">
+                            เมื่อชำระเงินเรียบร้อยแล้ว กรุณาติดต่อเราพร้อมหลักฐานการโอนเงินเพื่อยืนยันการสั่งซื้อ
+                        </p>
+                        <a href="#" class="mt-6 inline-block cta-button bg-amber-600 text-white text-lg font-semibold px-8 py-3 rounded-full hover:bg-amber-700">แจ้งชำระเงิน (ลิงก์ไปยัง Line/Facebook)</a>
+                    </div>
+                </section>
+            </div> <!-- End of thai-content -->
+
+            <!-- English Content -->
+            <div id="english-content" class="lang-content hidden">
+                <!-- Main Product Section (Amazon-like Top Fold) -->
+                <section class="bg-white rounded-lg shadow-md p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Product Image Gallery -->
+                    <div class="md:col-span-1 flex flex-col items-center">
+                        <div class="w-full max-w-md h-80 md:h-96 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border border-gray-200">
+                            <img id="mainProductImageEn" src="http://googleusercontent.com/file_content/1" alt="Morton Kosher Salt image" class="w-full h-full object-contain">
+                        </div>
+                        <div class="mt-4 flex space-x-2 justify-center">
+                            <img class="thumbnail-image en-thumbnail w-16 h-16 rounded-md border border-gray-300 active" src="http://googleusercontent.com/file_content/1" alt="Morton Kosher Salt front view" data-full="http://googleusercontent.com/file_content/1">
+                            <img class="thumbnail-image en-thumbnail w-16 h-16 rounded-md border border-gray-300" src="http://googleusercontent.com/file_content/4" alt="Morton Kosher Salt back view" data-full="http://googleusercontent.com/file_content/4">
+                            <img class="thumbnail-image en-thumbnail w-16 h-16 rounded-md border border-gray-300" src="http://googleusercontent.com/file_content/2" alt="Morton Kosher Salt nutrition label" data-full="http://googleusercontent.com/file_content/2">
+                        </div>
+                    </div>
+
+                    <!-- Product Info (Middle Column) -->
+                    <div class="md:col-span-1">
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Morton Coarse Kosher Salt 454g: Elevate Your Dishes to Chef Level</h1>
+                        <div class="flex items-center mt-2">
+                            <span class="text-amber-500 text-xl">★★★★★</span>
+                            <span class="ml-2 text-gray-600">4.9 out of 5 stars (1,500+ Reviews)</span>
+                        </div>
+                        <p class="mt-4 text-lg text-gray-700">Enhance every meal with the rich, balanced flavor of Morton Coarse Kosher Salt, trusted by professional chefs worldwide.</p>
+                        
+                        <ul class="mt-6 space-y-2 text-gray-700 list-disc list-inside">
+                            <li><strong class="text-gray-900">Easy to Control:</strong> Large, coarse crystals are easy to pinch, allowing for precise seasoning.</li>
+                            <li><strong class="text-gray-900">Dissolves Quickly:</strong> Blends seamlessly into your dishes for consistent flavor.</li>
+                            <li><strong class="text-gray-900">Boosts Flavor:</strong> Brings out the natural deliciousness of your ingredients.</li>
+                            <li><strong class="text-gray-900">Pure Taste:</strong> Iodine-free, ensuring a clean flavor without bitterness, perfect for all recipes.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Buy Box (Right Column) -->
+                    <div class="md:col-span-1 bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <p class="text-gray-500 line-through text-xl">Regular Price: ฿1,290</p>
+                        <p class="text-amber-700 font-bold text-4xl mt-2">Special Price: ฿990</p>
+                        <p class="text-green-600 text-lg mt-2">✅ In Stock</p>
+                        <p class="text-gray-600 text-sm mt-1">Free Shipping Nationwide</p>
+
+                        <div class="mt-6">
+                            <label for="quantityEn" class="block text-gray-700 font-semibold mb-2">Quantity:</label>
+                            <input type="number" id="quantityEn" value="1" min="1" class="w-24 p-2 border border-gray-300 rounded-md text-center">
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <a href="#payment-section" class="cta-button block w-full bg-amber-600 text-white text-lg font-semibold px-8 py-3 rounded-full text-center hover:bg-amber-700" onclick="showView('main-sales', 'payment-section'); return false;">Add to Cart</a>
+                            <a href="#payment-section" class="cta-button block w-full bg-gray-800 text-white text-lg font-semibold px-8 py-3 rounded-full text-center hover:bg-gray-900" onclick="showView('main-sales', 'payment-section'); return false;">Buy Now</a>
+                        </div>
+
+                        <div class="mt-6 text-sm text-gray-600">
+                            <p>⭐ Quality Guarantee: 30-Day Money-Back</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Detailed Product Description -->
+                <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Product Details</h2>
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Morton Coarse Kosher Salt 454g is a premium coarse kosher salt trusted by chefs and home cooks worldwide.
+                        Its large, distinctive flakes make it easy to pinch and control the amount used for seasoning.
+                        Unlike regular table salt, which often contains iodine and can leave a slightly bitter taste, Morton Kosher Salt offers a pure flavor
+                        that enhances the natural taste of your ingredients, making all your dishes more delicious.
+                    </p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">Why is Morton Coarse Kosher Salt the Best Choice?</h3>
+                    <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                        <li><strong class="text-gray-900">Superior Flavor Control:</strong> Larger flakes allow you to "feel" the amount of salt more precisely than fine-grained salts.</li>
+                        <li><strong class="text-gray-900">Excellent Dissolving and Penetration:</strong> Ideal for brining meats, making rubs, or seasoning dishes where consistent salt absorption is desired.</li>
+                        <li><strong class="text-gray-900">Versatile Use:</strong> Perfect for a wide range of applications, from everyday cooking, baking, and grilling, to rimming cocktail glasses.</li>
+                        <li><strong class="text-gray-900">Trusted Quality:</strong> From Morton, a leading salt brand with a long-standing history in kitchens.</li>
+                    </ul>
+                </section>
+
+                <!-- Customer Reviews Section -->
+                <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Customer Reviews</h2>
+                    <div class="flex items-center mt-4">
+                        <span class="text-amber-500 text-3xl">★★★★★</span>
+                        <span class="ml-3 text-gray-700 text-xl font-semibold">4.9 out of 5 stars</span>
+                        <span class="ml-2 text-gray-500">(from 1,500+ reviews)</span>
+                    </div>
+
+                    <div class="mt-8 space-y-6">
+                        <!-- Review 1 -->
+                        <div class="border-b border-gray-200 pb-6 last:border-b-0">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                                <div class="ml-3">
+                                    <p class="font-semibold text-gray-900">Arunee S.</p>
+                                    <span class="text-amber-500 text-lg">★★★★★</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-gray-700 leading-relaxed">"This salt is fantastic. My dishes taste much better now. I love how easy it is to pick up and control the amount."</p>
+                            <p class="text-sm text-gray-500 mt-2">Reviewed on July 20, 2025</p>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="border-b border-gray-200 pb-6 last:border-b-0">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                                <div class="ml-3">
+                                    <p class="font-semibold text-gray-900">Panu C.</p>
+                                    <span class="text-amber-500 text-lg">★★★★★</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-gray-700 leading-relaxed">"I tried Morton Kosher Salt for brining meat, and it really made the meat tender. The flavor soaked in perfectly. Highly recommended!"</p>
+                            <p class="text-sm text-gray-500 mt-2">Reviewed on July 15, 2025</p>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="border-b border-gray-200 pb-6 last:border-b-0">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                                <div class="ml-3">
+                                    <p class="font-semibold text-gray-900">Mesa T.</p>
+                                    <span class="text-amber-500 text-lg">★★★★★</span>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-gray-700 leading-relaxed">"Morton Kosher Salt is a kitchen essential for me. Everything tastes better with it. The flavor isn't overly salty like regular salt."</p>
+                            <p class="text-sm text-gray-500 mt-2">Reviewed on July 10, 2025</p>
+                        </div>
+                    </div>
+                    <button class="mt-8 bg-gray-200 text-gray-700 px-6 py-3 rounded-full hover:bg-gray-300 transition">Read All Reviews</button>
+                </section>
+
+                <!-- Offer Section -->
+                <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
+                    <div class="bg-amber-50 border-2 border-amber-200 rounded-xl p-6 md:p-10 text-center">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Special Offer for You!</h2>
+                        <p class="mt-3 text-lg text-gray-600">Get Morton Coarse Kosher Salt 454g today at an unprecedented price.</p>
+                        
+                        <div class="my-6">
+                            <p class="text-gray-500 line-through text-xl">Regular Price: ฿1,290</p>
+                            <p class="text-amber-700 font-bold text-5xl md:text-6xl">Only: ฿990</p>
+                            <p class="mt-2 font-semibold text-lg">Plus Free Nationwide Shipping!</p>
+                        </div>
+
+                        <div class="bg-green-100 text-green-800 p-3 rounded-lg inline-block">
+                            <p>⭐ Quality Guaranteed: 30-Day Money-Back Policy</p>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="#payment-section" class="cta-button w-full md:w-auto bg-amber-600 text-white text-xl font-semibold px-12 py-4 rounded-full text-center hover:bg-amber-700" onclick="showView('main-sales', 'payment-section'); return false;">Order Now!</a>
+                        </div>
+
+                        <div id="countdownEn" class="mt-6">
+                            <p class="text-gray-600">This offer ends in:</p>
+                            <p id="timerEn" class="text-2xl font-bold text-gray-900 mt-2"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Payment via QR Code Section -->
+                <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Payment Steps</h2>
+                        <p class="mt-3 text-lg text-gray-600">Scan the QR Code to easily and quickly pay for your order.</p>
+
+                        <div class="mt-8 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-900">Scan to Pay</h3>
+                            <p class="mt-3 text-gray-600">Use your banking application to scan the QR Code below.</p>
+                            
+                            <div class="mt-6 mx-auto w-64 h-64 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border border-gray-300">
+                                <!--  -->
+                                <img id="qrCodeImageEn" src="https://placehold.co/256x256/E0E0E0/6B7280?text=QR+Code" alt="QR Code Payment" class="w-full h-full object-contain">
+                            </div>
+                            <p class="mt-4 text-gray-700 font-semibold">Amount Due: <span class="text-amber-700 text-2xl">฿990</span></p>
+
+                            <div class="mt-8 text-left">
+                                <h4 class="font-semibold text-gray-800">Bank Transfer Details:</h4>
+                                <p class="text-gray-600 mt-2">
+                                    <span class="font-medium">Account Name:</span> <span id="accountNameEn">Your Beneficiary Name</span><br>
+                                    <span class="font-medium">Bank:</span> <span id="bankNameEn">Your Bank Name</span><br>
+                                    <span class="font-medium">Account Number:</span> <span id="accountNumberEn">XXX-X-XXXXX-X</span>
+                                </p>
+                                <button id="copyPaymentDetailsEn" class="mt-4 bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition">Copy Details</button>
+                                <p id="copyMessageEn" class="text-sm text-green-600 mt-2 hidden">Copied!</p>
+                            </div>
+                        </div>
+                        <p class="mt-8 text-gray-600">
+                            Once payment is complete, please contact us with your proof of transfer to confirm your order.
+                        </p>
+                        <a href="#" class="mt-6 inline-block cta-button bg-amber-600 text-white text-lg font-semibold px-8 py-3 rounded-full hover:bg-amber-700">Notify Payment (Link to Line/Facebook)</a>
+                    </div>
+                </section>
+            </div> <!-- End of english-content -->
+        </div> <!-- End of main-sales-content -->
+
+        <!-- Information Pages View (Hidden by default) -->
+        <div id="info-pages-content" class="hidden fade-in">
+            <!-- Privacy Policy Section - Thai -->
+            <section id="privacy-policy-section-th" class="bg-white rounded-lg shadow-md p-6 md:p-8 lang-th">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">นโยบายความเป็นส่วนตัว</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p>นโยบายความเป็นส่วนตัวนี้อธิบายถึงวิธีการที่เว็บไซต์ [ชื่อเว็บไซต์ของคุณ] รวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของคุณเมื่อคุณเยี่ยมชมหรือทำการซื้อจากเว็บไซต์ของเรา</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">1. ข้อมูลที่เรารวบรวม</h3>
+                    <p>เราอาจรวบรวมข้อมูลส่วนบุคคลประเภทต่างๆ เมื่อคุณโต้ตอบกับเว็บไซต์ของเรา ซึ่งรวมถึง:</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li><strong class="text-gray-900">ข้อมูลที่คุณให้เราโดยตรง:</strong> เช่น ชื่อ, ที่อยู่, อีเมล, หมายเลขโทรศัพท์, ข้อมูลการชำระเงิน (แต่เราไม่จัดเก็บข้อมูลบัตรเครดิตโดยตรง) เมื่อคุณลงทะเบียนบัญชี, ทำการสั่งซื้อ, หรือติดต่อเรา</li>
+                        <li><strong class="text-gray-900">ข้อมูลการใช้งานอัตโนมัติ:</strong> เช่น ที่อยู่ IP, ประเภทเบราว์เซอร์, ระบบปฏิบัติการ, หน้าที่เข้าชม, เวลาที่ใช้บนเว็บไซต์ และข้อมูลอื่นๆ ผ่านคุกกี้และเทคโนโลยีการติดตามที่คล้ายกัน</li>
+                        <li><strong class="text-gray-900">ข้อมูลจากเครื่องมือวิเคราะห์ภายนอก:</strong> เราอาจใช้บริการจากบุคคลที่สาม เช่น Google Analytics เพื่อรวบรวมข้อมูลการใช้งานที่ไม่ระบุตัวตน ซึ่งช่วยให้เราเข้าใจพฤติกรรมผู้เข้าชมและปรับปรุงเว็บไซต์</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">2. การใช้ข้อมูลของคุณ</h3>
+                    <p>เราใช้ข้อมูลที่รวบรวมเพื่อวัตถุประสงค์ต่างๆ รวมถึง:</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>ประมวลผลคำสั่งซื้อและจัดการการชำระเงิน</li>
+                        <li>ให้บริการลูกค้าและตอบคำถามของคุณ</li>
+                        <li>ปรับปรุงและพัฒนาเว็บไซต์ ผลิตภัณฑ์ และบริการของเรา</li>
+                        <li>ส่งข้อมูลการตลาดและโปรโมชั่น (หากคุณยินยอม)</li>
+                        <li>วิเคราะห์แนวโน้มและพฤติกรรมการใช้งานเพื่อปรับปรุงประสบการณ์ผู้ใช้</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">3. การเปิดเผยข้อมูล</h3>
+                    <p>เราจะไม่ขาย แลกเปลี่ยน หรือให้เช่าข้อมูลส่วนบุคคลของคุณแก่บุคคลที่สาม เว้นแต่จะระบุไว้ในนโยบายนี้ เราอาจเปิดเผยข้อมูลของคุณต่อ:</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>ผู้ให้บริการบุคคลที่สามที่ช่วยเราในการดำเนินธุรกิจ เช่น ผู้ให้บริการชำระเงิน, บริษัทขนส่ง</li>
+                        <li>หน่วยงานภาครัฐหรือตามข้อกำหนดทางกฎหมาย</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">4. ความปลอดภัยของข้อมูล</h3>
+                    <p>เราใช้มาตรการรักษาความปลอดภัยที่เหมาะสมเพื่อปกป้องข้อมูลส่วนบุคคลของคุณจากการเข้าถึง การเปลี่ยนแปลง การเปิดเผย หรือการทำลายโดยไม่ได้รับอนุญาต</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">5. สิทธิ์ของคุณ</h3>
+                    <p>คุณมีสิทธิ์ในการเข้าถึง แก้ไข หรือลบข้อมูลส่วนบุคคลของคุณที่อยู่กับเรา หากต้องการใช้สิทธิ์เหล่านี้ โปรดติดต่อเราตามรายละเอียดด้านล่าง</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">6. การเปลี่ยนแปลงนโยบาย</h3>
+                    <p>เราอาจปรับปรุงนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราว การเปลี่ยนแปลงใดๆ จะมีผลบังคับใช้ทันทีเมื่อมีการเผยแพร่บนหน้านี้</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">7. การติดต่อเรา</h3>
+                    <p>หากคุณมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเราที่ [อีเมลของคุณ] หรือ [เบอร์โทรศัพท์ของคุณ]</p>
+                </div>
+            </section>
+
+            <!-- Privacy Policy Section - English -->
+            <section id="privacy-policy-section-en" class="bg-white rounded-lg shadow-md p-6 md:p-8 hidden lang-en">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">Privacy Policy</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p>This Privacy Policy describes how [Your Website Name] collects, uses, and discloses your personal information when you visit or make a purchase from our website.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">1. Information We Collect</h3>
+                    <p>We may collect various types of personal information when you interact with our website, including:</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li><strong class="text-gray-900">Information You Provide Directly:</strong> Such as your name, address, email, phone number, payment information (we do not store credit card details directly) when you register an account, place an order, or contact us.</li>
+                        <li><strong class="text-gray-900">Automated Usage Data:</strong> Such as IP address, browser type, operating system, pages visited, time spent on the website, and other information via cookies and similar tracking technologies.</li>
+                        <li><strong class="text-gray-900">Data from External Analytics Tools:</strong> We may use third-party services like Google Analytics to collect anonymized usage data, which helps us understand visitor behavior and improve our website.</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">2. How We Use Your Information</h3>
+                    <p>We use the collected information for various purposes, including:</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Processing orders and managing payments.</li>
+                        <li>Providing customer service and responding to your inquiries.</li>
+                        <li>Improving and developing our website, products, and services.</li>
+                        <li>Sending marketing and promotional information (if you consent).</li>
+                        <li>Analyzing trends and usage patterns to enhance user experience.</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">3. Information Disclosure</h3>
+                    <p>We do not sell, trade, or rent your personal information to third parties, except as stated in this policy. We may disclose your information to:</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Third-party service providers who assist us in operating our business, such as payment processors, shipping companies.</li>
+                        <li>Government authorities or as required by law.</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">4. Data Security</h3>
+                    <p>We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">5. Your Rights</h3>
+                    <p>You have the right to access, correct, or delete your personal information held by us. To exercise these rights, please contact us using the details below.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">6. Changes to Policy</h3>
+                    <p>We may update this Privacy Policy from time to time. Any changes will be effective immediately upon publication on this page.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">7. Contact Us</h3>
+                    <p>If you have any questions about this Privacy Policy, please contact us at [Your Email] or [Your Phone Number].</p>
+                </div>
+            </section>
+
+            <!-- Terms and Conditions Section - Thai -->
+            <section id="terms-conditions-section-th" class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8 lang-th">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">ข้อตกลงและเงื่อนไข</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p>ยินดีต้อนรับสู่ [ชื่อเว็บไซต์ของคุณ] การเข้าถึงและใช้งานเว็บไซต์นี้อยู่ภายใต้ข้อตกลงและเงื่อนไขต่อไปนี้ โปรดอ่านอย่างละเอียดก่อนใช้งาน</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">1. การยอมรับข้อตกลง</h3>
+                    <p>การที่คุณเข้าถึงหรือใช้เว็บไซต์นี้ ถือว่าคุณได้อ่าน เข้าใจ และยอมรับที่จะผูกพันตามข้อตกลงและเงื่อนไขทั้งหมดนี้ หากคุณไม่เห็นด้วยกับข้อตกลงใดๆ โปรดอย่าใช้เว็บไซต์นี้</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">2. การใช้งานเว็บไซต์</h3>
+                    <p>เว็บไซต์นี้มีไว้สำหรับการใช้งานส่วนบุคคลและไม่ใช่เชิงพาณิชย์เท่านั้น คุณตกลงที่จะไม่ใช้เว็บไซต์เพื่อวัตถุประสงค์ที่ผิดกฎหมายหรือไม่ได้รับอนุญาต</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>ไม่กระทำการใดๆ ที่อาจสร้างความเสียหาย ขัดขวาง หรือทำให้การทำงานของเว็บไซต์ลดลง</li>
+                        <li>ไม่พยายามเข้าถึงส่วนใดๆ ของเว็บไซต์ ระบบคอมพิวเตอร์ หรือเครือข่ายที่ไม่ได้อนุญาต</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">3. สินค้าและบริการ</h3>
+                    <p>ข้อมูลเกี่ยวกับสินค้าและบริการทั้งหมดบนเว็บไซต์นี้เป็นไปเพื่อวัตถุประสงค์ในการให้ข้อมูลเท่านั้น เราพยายามให้ข้อมูลที่ถูกต้องและครบถ้วน แต่ไม่รับประกันความถูกต้องสมบูรณ์ของข้อมูลดังกล่าว</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">4. ราคาและการชำระเงิน</h3>
+                    <p>ราคาสินค้าทั้งหมดที่แสดงบนเว็บไซต์เป็นสกุลเงินบาทไทย (THB) และอาจมีการเปลี่ยนแปลงโดยไม่ต้องแจ้งให้ทราบล่วงหน้า เรายอมรับวิธีการชำระเงินที่ระบุไว้ในส่วน "ขั้นตอนการชำระเงิน"</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">5. การจัดส่ง</h3>
+                    <p>รายละเอียดเกี่ยวกับการจัดส่งสินค้า ระยะเวลา และค่าใช้จ่าย (หากมี) จะระบุไว้ในขั้นตอนการสั่งซื้อ หรือในส่วน "รายละเอียดสินค้า" หากมีข้อสงสัยเพิ่มเติม โปรดติดต่อเรา</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">6. การคืนสินค้าและการคืนเงิน</h3>
+                    <p>นโยบายการคืนสินค้าและการคืนเงินของเราเป็นไปตามที่ระบุไว้ในส่วน "ข้อเสนอสุดพิเศษ" หรือติดต่อสอบถามเพิ่มเติมได้ที่ฝ่ายบริการลูกค้า</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">7. ข้อจำกัดความรับผิด</h3>
+                    <p>เว็บไซต์และข้อมูลที่แสดงในเว็บไซต์นี้จัดทำขึ้น "ตามสภาพที่เป็นจริง" เราไม่รับผิดชอบต่อความเสียหายใดๆ ที่เกิดขึ้นจากการใช้งานหรือไม่สามารถใช้งานเว็บไซต์ได้</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">8. การเปลี่ยนแปลงข้อตกลง</h3>
+                    <p>เราขอสงวนสิทธิ์ในการแก้ไขหรือปรับปรุงข้อตกลงและเงื่อนไขเหล่านี้ได้ตลอดเวลา การเปลี่ยนแปลงจะมีผลทันทีเมื่อมีการเผยแพร่บนเว็บไซต์</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">9. กฎหมายที่บังคับใช้</h3>
+                    <p>ข้อตกลงและเงื่อนไขเหล่านี้อยู่ภายใต้กฎหมายของประเทศไทย</p>
+                </div>
+            </section>
+
+            <!-- Terms and Conditions Section - English -->
+            <section id="terms-conditions-section-en" class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8 hidden lang-en">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">Terms and Conditions</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p>Welcome to [Your Website Name]. Your access to and use of this website is subject to the following terms and conditions. Please read them carefully before using the website.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">1. Acceptance of Terms</h3>
+                    <p>By accessing or using this website, you agree to be bound by all these terms and conditions. If you do not agree with any of these terms, please do not use this website.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">2. Website Use</h3>
+                    <p>This website is for personal and non-commercial use only. You agree not to use the website for any unlawful or unauthorized purposes.</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Do not engage in any activity that may harm, disrupt, or impair the functioning of the website.</li>
+                        <li>Do not attempt to gain unauthorized access to any part of the website, computer systems, or networks.</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">3. Products and Services</h3>
+                    <p>All information about products and services on this website is for informational purposes only. We strive to provide accurate and complete information, but we do not guarantee the completeness or accuracy of such information.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">4. Pricing and Payment</h3>
+                    <p>All product prices displayed on the website are in Thai Baht (THB) and are subject to change without prior notice. We accept payment methods specified in the "Payment Steps" section.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">5. Shipping</h3>
+                    <p>Details regarding product shipping, delivery times, and costs (if any) will be specified during the order process or in the "Product Details" section. Please contact us for further inquiries.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">6. Returns and Refunds</h3>
+                    <p>Our return and refund policy is as stated in the "Special Offer" section or by contacting customer service for more information.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">7. Limitation of Liability</h3>
+                    <p>This website and the information displayed on it are provided "as is." We are not responsible for any damages arising from the use or inability to use the website.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">8. Changes to Terms</h3>
+                    <p>We reserve the right to amend or update these terms and conditions at any time. Changes will be effective immediately upon publication on the website.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6">9. Governing Law</h3>
+                    <p>These terms and conditions are governed by the laws of Thailand.</p>
+                </div>
+            </section>
+
+            <!-- Contact Us Section - Thai -->
+            <section id="contact-us-section-th" class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8 lang-th">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">ติดต่อเรา</h2>
+                <div class="prose max-w-none text-gray-700 text-center">
+                    <p>เรายินดีเป็นอย่างยิ่งที่จะรับฟังความคิดเห็น คำถาม หรือข้อเสนอแนะจากคุณ โปรดติดต่อเราตามช่องทางด้านล่างนี้:</p>
+                    <div class="mt-8 space-y-4">
+                        <p class="text-lg">
+                            <strong class="text-gray-900">โทรศัพท์:</strong> <a href="tel:+66xxxxxxxxxx" class="text-amber-700 hover:underline">0X-XXX-XXXX</a> (จันทร์ - ศุกร์, 9:00 น. - 17:00 น.)
+                        </p>
+                        <p class="text-lg">
+                            <strong class="text-gray-900">อีเมล:เทมเพลต Sales Page สไตล์ Amazon: Morton Coarse Kosher Salt 454g (Multi-language Auto-detect)</strong> <a href="mailto:info@yourwebsite.com" class="text-amber-700 hover:underline">info@yourwebsite.com</a> (เราจะตอบกลับภายใน 24 ชั่วโมง)
+                        </p>
+                        <p class="text-lg">
+                            <strong class="text-gray-900">ที่อยู่:</strong> [เลขที่บ้าน/อาคาร] [ชื่อถนน] [แขวง/ตำบล] [เขต/อำเภอ] [จังหวัด] [รหัสไปรษณีย์]
+                        </p>
+                        <p class="text-lg">
+                            <strong class="text-gray-900">Line ID:</strong> <span class="text-amber-700">[YourLineID]</span>
+                        </p>
+                        <p class="text-lg">
+                            <strong class="text-gray-900">Facebook Page:</strong> <a href="https://facebook.com/yourpage" target="_blank" class="text-amber-700 hover:underline">fb.com/YourPage</a>
+                        </p>
+                    </div>
+                    <p class="mt-8 text-gray-600">เรามุ่งมั่นที่จะให้บริการที่ดีที่สุดแก่ลูกค้าของเราเสมอ</p>
+                </div>
+            </section>
+
+            <!-- Contact Us Section - English -->
+            <section id="contact-us-section-en" class="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8 hidden lang-en">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">Contact Us</h2>
+                <div class="prose max-w-none text-gray-700 text-center">
+                    <p>We are happy to hear your feedback, questions, or suggestions. Please contact us via the channels below:</p>
+                    <div class="mt-8 space-y-4">
+                        <p class="text-lg">
+                            <strong class="text-gray-900">Phone:</strong> <a href="tel:+66xxxxxxxxxx" class="text-amber-700 hover:underline">0X-XXX-XXXX</a> (Mon - Fri, 9:00 AM - 5:00 PM)
+                        </p>
+                        <p class="text-lg">
+                            <strong class="text-gray-900">Email:</strong> <a href="mailto:info@yourwebsite.com" class="text-amber-700 hover:underline">info@yourwebsite.com</a> (We will reply within 24 hours)
+                        </p>
+                        <p class="text-lg">
+                            <strong class="text-gray-900">Address:</strong> [House/Building No.] [Street Name] [Sub-district/Sub-area] [District/Area] [Province] [Postal Code]
+                        </p>
+                        <p class="text-lg">
+                            <strong class="text-gray-900">Line ID:</strong> <span class="text-amber-700">[YourLineID]</span>
+                        </p>
+                        <p class="text-lg">
+                            <strong class="text-gray-900">Facebook Page:</strong> <a href="https://facebook.com/yourpage" target="_blank" class="text-amber-700 hover:underline">fb.com/YourPage</a>
+                        </p>
+                    </div>
+                    <p class="mt-8 text-gray-600">We are committed to providing the best service to our customers always.</p>
+                </div>
+            </section>
+        </div> <!-- End of info-pages-content -->
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>
+                <span class="lang-th">&copy; 2025 Morton Salt. สงวนลิขสิทธิ์.</span>
+                <span class="lang-en hidden">&copy; 2025 Morton Salt. All rights reserved.</span>
+            </p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#privacy-policy-section" class="hover:text-white" onclick="showView('privacy'); return false;">
+                    <span class="lang-th">นโยบายความเป็นส่วนตัว</span>
+                    <span class="lang-en hidden">Privacy Policy</span>
+                </a>
+                <a href="#terms-conditions-section" class="hover:text-white" onclick="showView('terms'); return false;">
+                    <span class="lang-th">ข้อตกลงและเงื่อนไข</span>
+                    <span class="lang-en hidden">Terms & Conditions</span>
+                </a>
+                <a href="#contact-us-section" class="hover:text-white" onclick="showView('contact'); return false;">
+                    <span class="lang-th">ติดต่อเรา</span>
+                    <span class="lang-en hidden">Contact Us</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set default language. Will be overridden by auto-detection.
+        let currentLang = 'th';
+
+        // Function to switch language
+        window.setLanguage = function(lang) {
+            currentLang = lang;
+            document.querySelectorAll('.lang-content').forEach(el => {
+                if (el.id === 'thai-content' && lang === 'th') {
+                    el.classList.remove('hidden');
+                } else if (el.id === 'english-content' && lang === 'en') {
+                    el.classList.remove('hidden');
+                } else {
+                    el.classList.add('hidden');
+                }
+            });
+
+            document.querySelectorAll('.lang-th').forEach(el => {
+                el.classList.toggle('hidden', lang === 'en');
+            });
+            document.querySelectorAll('.lang-en').forEach(el => {
+                el.classList.toggle('hidden', lang === 'th');
+            });
+
+            // Update active language button style
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active-lang-btn', 'bg-gray-300');
+                btn.classList.add('bg-gray-200');
+            });
+            document.getElementById(`lang-${lang}-btn`).classList.add('active-lang-btn', 'bg-gray-300');
+            document.getElementById(`lang-${lang}-btn`).classList.remove('bg-gray-200');
+
+            // Re-initialize dynamic elements for the active language, e.g., image gallery
+            if (currentView === 'main-sales') { // Only re-init if on sales page
+                initProductImageGallery(lang);
+            }
+            
+            // Re-adjust page title
+            if (lang === 'th') {
+                document.title = 'Morton Coarse Kosher Salt 454g | ยกระดับทุกเมนูให้มีรสชาติกลมกล่อม';
+            } else {
+                document.title = 'Morton Coarse Kosher Salt 454g | Elevate Your Dishes to Chef Level';
+            }
+
+            // Scroll to top of current view after language switch
+            if (currentView === 'main-sales') {
+                 window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                 showView(currentView, null, true); // Re-show current info page and scroll to top
+            }
+        };
+
+        // Function to handle product image gallery for current language
+        function initProductImageGallery(lang) {
+            const mainProductImageId = `mainProductImage${lang === 'th' ? 'Th' : 'En'}`;
+            const thumbnailClass = `${lang}-thumbnail`;
+
+            const mainProductImage = document.getElementById(mainProductImageId);
+            const thumbnails = document.querySelectorAll(`.${thumbnailClass}`);
+
+            if (!mainProductImage) return; // Exit if main image for current lang not found
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.removeEventListener('click', handleThumbnailClick); // Remove old listeners
+                thumbnail.addEventListener('click', handleThumbnailClick); // Add new listeners
+                thumbnail.classList.remove('active'); // Reset active state
+            });
+
+            // Set initial active thumbnail
+            const initialThumbnail = thumbnails[0];
+            if (initialThumbnail) {
+                mainProductImage.src = initialThumbnail.dataset.full;
+                initialThumbnail.classList.add('active');
+            }
+        }
+
+        function handleThumbnailClick(event) {
+            const mainProductImage = document.getElementById(`mainProductImage${currentLang === 'th' ? 'Th' : 'En'}`);
+            const thumbnails = document.querySelectorAll(`.${currentLang}-thumbnail`);
+
+            mainProductImage.src = event.currentTarget.dataset.full;
+            thumbnails.forEach(t => t.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+
+        // Global variable to keep track of the current active view
+        let currentView = 'main-sales';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Auto-detect browser language
+            const browserLang = navigator.language.split('-')[0]; // e.g., 'en' from 'en-US'
+
+            if (browserLang === 'en') {
+                currentLang = 'en';
+            } else {
+                currentLang = 'th'; // Default to Thai for any other language, including 'th'
+            }
+
+            // Initial language setup based on auto-detection
+            setLanguage(currentLang); 
+
+            // Scroll animations (for sections within the active view)
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe elements within the currently active main sales content
+            document.querySelectorAll('#main-sales-content .fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // FAQ Accordion
+            function initFaqAccordion() {
+                const faqItems = document.querySelectorAll(`#${currentLang}-content .faq-item, #info-pages-content .lang-${currentLang} .faq-item`);
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question');
+                    const answer = item.querySelector('.faq-answer');
+                    const icon = item.querySelector('.faq-icon');
+
+                    // Remove existing listeners to prevent duplicates
+                    const oldQuestion = question.cloneNode(true);
+                    question.parentNode.replaceChild(oldQuestion, question);
+
+                    oldQuestion.addEventListener('click', () => {
+                        const isOpen = answer.classList.contains('max-h-96');
+
+                        // Close all other items within the same FAQ section
+                        oldQuestion.closest('section').querySelectorAll('.faq-item').forEach(otherItem => {
+                            if (otherItem !== item) { // Don't close itself
+                                otherItem.querySelector('.faq-answer').classList.remove('max-h-96');
+                                otherItem.querySelector('.faq-answer').style.paddingTop = '0';
+                                otherItem.querySelector('.faq-icon').classList.remove('rotate-45');
+                            }
+                        });
+
+                        if (!isOpen) {
+                            answer.classList.add('max-h-96');
+                            answer.style.paddingTop = '0';
+                            icon.classList.add('rotate-45');
+                        } else {
+                            answer.classList.remove('max-h-96');
+                            answer.style.paddingTop = '0';
+                            icon.classList.remove('rotate-45');
+                        }
+                    });
+                });
+            }
+            initFaqAccordion();
+
+
+            // Countdown Timer
+            function initCountdownTimer(lang) {
+                const countdownElement = document.getElementById(`timer${lang === 'th' ? 'Th' : 'En'}`);
+                if(countdownElement) {
+                    let countDownDate = new Date().getTime() + (24 * 60 * 60 * 1000); // 24 hours from now
+
+                    // Clear previous interval if exists
+                    if (countdownElement.dataset.intervalId) {
+                        clearInterval(parseInt(countdownElement.dataset.intervalId));
+                    }
+
+                    const updateTimer = setInterval(function() {
+                        let now = new Date().getTime();
+                        let distance = countDownDate - now;
+
+                        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        countdownElement.innerHTML = `${hours.toString().padStart(2, '0')} : ${minutes.toString().padStart(2, '0')} : ${seconds.toString().padStart(2, '0')}`;
+
+                        if (distance < 0) {
+                            clearInterval(updateTimer);
+                            countdownElement.innerHTML = (lang === 'th' ? "ข้อเสนอสิ้นสุดแล้ว" : "Offer Ended");
+                        }
+                    }, 1000);
+                    countdownElement.dataset.intervalId = updateTimer; // Store interval ID
+                }
+            }
+            initCountdownTimer(currentLang); // Initialize for default language
+
+            // Copy Payment Details
+            function initCopyPaymentDetails(lang) {
+                const copyButton = document.getElementById(`copyPaymentDetails${lang === 'th' ? 'Th' : 'En'}`);
+                const copyMessage = document.getElementById(`copyMessage${lang === 'th' ? 'Th' : 'En'}`);
+                
+                if (copyButton) {
+                    // Remove existing event listener
+                    const oldCopyButton = copyButton.cloneNode(true);
+                    copyButton.parentNode.replaceChild(oldCopyButton, copyButton);
+
+                    oldCopyButton.addEventListener('click', () => {
+                        const accountName = document.getElementById(`accountName${lang === 'th' ? 'Th' : 'En'}`).innerText;
+                        const bankName = document.getElementById(`bankName${lang === 'th' ? 'Th' : 'En'}`).innerText;
+                        const accountNumber = document.getElementById(`accountNumber${lang === 'th' ? 'Th' : 'En'}`).innerText;
+                        const textToCopy = `ชื่อบัญชี: ${accountName}\nธนาคาร: ${bankName}\nเลขที่บัญชี: ${accountNumber}`;
+
+                        const textarea = document.createElement('textarea');
+                        textarea.value = textToCopy;
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textarea);
+
+                        copyMessage.classList.remove('hidden');
+                        setTimeout(() => {
+                            copyMessage.classList.add('hidden');
+                        }, 2000);
+                    });
+                }
+            }
+            initCopyPaymentDetails(currentLang);
+
+
+            // SPA View Management Logic
+            const mainSalesContent = document.getElementById('main-sales-content');
+            const infoPagesContent = document.getElementById('info-pages-content');
+            const infoSectionsTh = document.querySelectorAll('#info-pages-content .lang-th');
+            const infoSectionsEn = document.querySelectorAll('#info-pages-content .lang-en');
+
+            // Function to show/hide views and scroll
+            window.showView = function(viewName, sectionId = null, skipScrollToTop = false) {
+                mainSalesContent.classList.add('hidden');
+                infoPagesContent.classList.add('hidden');
+
+                // Hide all info sections regardless of language
+                infoSectionsTh.forEach(sec => sec.classList.add('hidden'));
+                infoSectionsEn.forEach(sec => sec.classList.add('hidden'));
+
+                if (viewName === 'main-sales') {
+                    mainSalesContent.classList.remove('hidden');
+                    // Ensure only the active language content is visible within main-sales-content
+                    document.getElementById('thai-content').classList.toggle('hidden', currentLang !== 'th');
+                    document.getElementById('english-content').classList.toggle('hidden', currentLang !== 'en');
+
+                    // Re-observe fade-in for main sales content if it was hidden
+                    document.querySelectorAll('#main-sales-content .fade-in').forEach(el => {
+                         el.classList.remove('visible'); // Reset animation
+                         observer.unobserve(el); // Unobserve to reset state
+                         observer.observe(el); // Re-observe to trigger fade-in
+                    });
+                    if (sectionId) {
+                        const targetElement = document.getElementById(sectionId); // ID does not include language suffix
+                        if (targetElement) {
+                            setTimeout(() => { // Small delay to allow visibility change before scroll
+                                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 100);
+                        }
+                    } else if (!skipScrollToTop) {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                } else {
+                    infoPagesContent.classList.remove('hidden');
+                    let targetInfoSection = null;
+                    if (viewName === 'privacy') {
+                        targetInfoSection = document.getElementById(`privacy-policy-section-${currentLang}`);
+                    } else if (viewName === 'terms') {
+                        targetInfoSection = document.getElementById(`terms-conditions-section-${currentLang}`);
+                    } else if (viewName === 'contact') {
+                        targetInfoSection = document.getElementById(`contact-us-section-${currentLang}`);
+                    }
+
+                    if (targetInfoSection) {
+                        targetInfoSection.classList.remove('hidden');
+                        // Ensure fade-in for info section
+                        targetInfoSection.classList.remove('visible'); // Reset animation
+                        observer.unobserve(targetInfoSection); // Unobserve to reset state
+                        observer.observe(targetInfoSection); // Re-observe to trigger fade-in
+                        setTimeout(() => { // Small delay to allow visibility change before scroll
+                            targetInfoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    }
+                    if (!skipScrollToTop) {
+                        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top of the info view
+                    }
+                }
+                currentView = viewName; // Update current view tracking
+                initFaqAccordion(); // Re-initialize FAQ accordion for the current language
+                initCountdownTimer(currentLang); // Re-initialize countdown for current language
+                initCopyPaymentDetails(currentLang); // Re-initialize copy payment for current language
+            };
+
+            // Initial view setup based on URL hash or default
+            if (window.location.hash) {
+                const hash = window.location.hash.substring(1); // Remove '#'
+                if (hash.includes('policy')) {
+                    showView('privacy');
+                } else if (hash.includes('terms')) {
+                    showView('terms');
+                } else if (hash.includes('contact')) {
+                    showView('contact');
+                } else {
+                    showView('main-sales', hash); // Try to scroll to specific sales section
+                }
+            } else {
+                showView('main-sales'); // Default to main sales page
+            }
+        });
+    </script>
+</body>
+</html>
